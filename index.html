@@ -1,0 +1,107 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+
+	<title>孙梦旗我喜欢你 </title>  
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<style type="text/css">
+		@font-face {
+			font-family: digit;
+			src: url("digital-7_mono.ttf"/*tpa=./digital-7_mono.ttf*/) format("truetype");
+		}
+	</style>
+	<link href="css/default.css" tppabs="./css/default.css" type="text/css" rel="stylesheet"> 
+	<script type="text/javascript" src="js/jquery.js" tppabs="./js/jquery.js"></script>
+	<script type="text/javascript" src="js/garden.js" tppabs="./js/garden.js"></script>
+    <script type="text/javascript" src="js/functions.js" tppabs="./js/functions.js"></script>
+<body>
+	<div id="mainDiv">
+		<div id="content">
+			<audio autoplay="autoplay" height="100" width="100">
+				<source src="renxi.mp3" type="audio/mp3" />
+				<embed height="100" width="100" src="renxi.mp3" />
+			</audio>
+			<div id="code">
+				<span class="comments">ll：</span><br />
+				<span class="space"><span class="comments">孙梦旗我喜欢你，这句话本应该在去年和你做同桌事的时候坦白，那时我始终没有鼓起勇气向你坦白，现在临近毕业，我心里一直不是滋味现在才坦白，虽然距离这么长时间没有交流，你我的感情早已生疏，但我对你的热爱一直未变。</span><br />
+				<span class="space"/><span class="comments">孙梦旗</span></span><br />
+				<span class="space"/><span class="comments">你是第1位令我心动的女孩，这也是我有史以来第1封表白信。不管别的人，你是在我心中是最美丽的女孩。再早些时候我也有对你这么说过，而且你很优秀。很显然我们的道路截然不同，你的前程似锦，道路美好。我也不是你心目中和道路中的那个男孩。我也感觉你并不喜欢我，我也感觉我配不上你，我是在想就算配不上你也不能留下我这一辈子的遗憾。在此表达的都是我所想的真实想法。这些话是个人都会说，但这是我内心的真心话。这些话也给不了你什么。我也知道。没有什么花言巧语，也没有什么土味情话，都是我内心的直白话。
+			
+				</span><br />
+				<span class="space"/><span class="comments">孙梦旗我明白这个决定很唐突，很冒昧，冒然写给你，让你感觉不好。请你原谅。我也不想因此影响你的学习，扰乱你的心。感谢你能看到这里。
+				最后呢，我在这里送出我最真诚的祝福
+				凡事如你所想，如你所愿，如你所愿，凡事皆有利于你，祝孙梦旗天天开心，达到理想的目标
+				----UPJ 2024 6 20 
+				</span><br />
+				
+			</div>
+			<div id="loveHeart">
+				<canvas id="garden"></canvas>
+				<div id="words">
+					<div id="messages">
+						缘分从这天开始
+						<div id="elapseClock"></div>
+					</div>
+					<div id="loveu">
+						祝你天天开心<br/>
+						<div class="signature">-UPJ</div>
+
+				</div>
+			</div>
+</div>
+	<div class="bg1">	
+		<div class="main">
+			<footer style="line-height:20px">
+                <div id="copyright">
+                  <p><a href='http://51bbw.cn' target="_blank"></a> 
+                    <a href="http://ymjzy.net" target="_blank"></a>
+                    <a href="" target="_blank"></a></p>
+
+                </div>
+		</div>
+	</div>
+</div>
+
+	<script type="text/javascript">
+		var offsetX = $("#loveHeart").width() / 2;
+		var offsetY = $("#loveHeart").height() / 2 - 55;
+		var together = new Date();
+		together.setFullYear(2023,10,8);
+		together.setHours(20);
+		together.setMinutes(0);
+		together.setSeconds(0);
+		together.setMilliseconds(0);
+		
+		if (!document.createElement('canvas').getContext) {
+			var msg = document.createElement("div");
+			msg.id = "errorMsg";
+			msg.innerHTML = "提醒您：您的浏览器版本过旧^_^<br/>"+
+				"推荐使用 <a href='http://dlsw.br.baidu.com/ditui/zujian/bdBrowserSetup-5956-ftn_1000061134.exe' target='_blank'>百度浏览器<br/>请先升级您的浏览器，效果很炫哦~~"; 
+			document.body.appendChild(msg);
+			$("#code").css("display", "none")
+			$("#copyright").css("position", "absolute");
+			$("#copyright").css("bottom", "10px");
+		    document.execCommand("stop");
+		} else {
+			setTimeout(function () {
+				adjustWordsPosition();
+				startHeartAnimation();
+			}, 5000);
+
+			timeElapse(together);
+			setInterval(function () {
+				timeElapse(together);
+			}, 500);
+
+			adjustCodePosition();
+			$("#code").typewriter();
+		}
+	</script>
+    <audio id="bgmMusic" src="http://qzone.haoduoge.com/music/C2C3F0LSXH4D771253124A26CF9C71C939B2A.mp3" preload="auto" type="audio/mp3" autoplay loop></audio>
+    
+
+
+</body>
+</html>
